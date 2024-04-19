@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attr</title>
+</head>
+<body>
+    <img src="asset/img/Logo.png" alt="Logo" id="logo">
+    <img src="" alt="Logo" id="logo2">
+
+    <script>
+        //Kode:Attr
+        let logo = document.getElementById("logo");
+        let src = logo.getAttributeNode("src");
+
+        console.info(src.name);
+        console.info(src.value);
+
+        //Kode:Attr Value
+        src = logo.getAttribute("src");
+        console.info(src);
+
+        //membuat Attr
+        logo2 = document.getElementById("logo2");
+        src = document.createAttribute("src");
+        src.value = "./asset/img/icon.png";
+        logo2.setAttributeNode(src);
+        //membuat attr langsung
+        logo2.setAttribute("src","./asset/img/icon.png");
+
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Hendler</title>
+</head>
+<body>
+    <input type="button" value="Click Me" id="clickMe">
+    <input type="button" value="Click Me" id="clickMe2">
+
+    <script>
+        //Event Listener
+        const clickMe = document.getElementById("clickMe");
+        clickMe.addEventListener("click", function(){
+            clickMe.setAttribute("value", "Makasih udah di klik!");
+        });
+
+        //Global Event Handler
+        const clickMe2 = document.getElementById("clickMe2");
+        clickMe2.onclick = function(){
+            clickMe2.setAttribute("value", "Ini Global Event!!");
+        }
+    </script>
+</body>
+</html>

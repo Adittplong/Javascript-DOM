@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selection</title>
+</head>
+<body>
+    <p>This is Text</p>
+
+    <ul id="menu">
+        <li class="menuItem">satu</li>
+        <li>dua</li>
+        <li>tiga</li>
+        <li>empat</li>
+        <li class="menuItem">lima</li>
+    </ul>
+
+    <p class="contect">This is Content</p>
+
+    <div class="aditya"></div>
+    <div class="prayoga"></div>
+    <div class="suarman"></div>
+
+    <script>
+        //Universal Selector
+        const elements = document.querySelectorAll("*");
+        console.info(elements);
+
+        //selector type
+        const list = document.querySelectorAll("li");
+        console.info(list);
+
+        //selector class
+        const menuItem = document.querySelectorAll(".menuItem");
+        console.info(menuItem);
+
+        //selector id
+        const menu = document.querySelectorAll("#menu");
+        console.info(menu);
+
+        //atribute Selector
+        const atribute = document.querySelectorAll("[class]")
+        console.info(atribute);
+
+        //operator attribute selector
+        const operatorAtribute = document.querySelectorAll("div[class ^= 'prayoga']");
+        console.info(operatorAtribute);
+    </script>
+</body>
+</html>

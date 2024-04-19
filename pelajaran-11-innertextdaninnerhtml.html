@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Content dan Inner Text</title>
+</head>
+<body>
+    <p id="content">
+        <script>
+            console.info("Hello World");
+        </script>
+
+        <b>Muhammad Aditya</b> Prayoga <i>Suarman</i>
+    </p>
+
+    <div id="content2"></div>
+
+    <script>
+        //inner text dan text content
+        const content = document.getElementById("content");
+
+        console.info(content.textContent);
+        console.info(content.innerText);
+
+        //inner HTML
+        console.info(content.innerHTML);
+
+        //mengubah element dengan inner HTML
+        content2.innerHTML = "<h1> This title</h1><p>this is description</p>"
+    </script>
+</body>
+</html>

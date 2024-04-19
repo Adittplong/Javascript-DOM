@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node</title>
+</head>
+<body>
+    <ul id="menu">
+        <li id="First">First</li>
+        <li id="Second">Second</li>
+        <li id="Third">Third</li>
+    </ul>
+
+    <script>
+        //node 
+        const menu = document.getElementById("menu");
+        console.info(menu);
+
+        const second = document.getElementById("Second");
+        console.info(second);
+
+        //node property
+        console.info(menu.childNodes);
+        console.info(second.textContent);
+        console.info(second.previousSibling);
+        console.info(second.nextSibling.nextSibling);
+
+        //node Method
+        menu.removeChild(document.getElementById("First"));
+        menu.removeChild(document.getElementById("Second"));
+        menu.removeChild(document.getElementById("Third"));
+    </script>
+</body>
+</html>
